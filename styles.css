@@ -1,11 +1,15 @@
-/* General Styles */
+/* Global Styles */
 body {
-    background-color: #1b1b1b;  /* Dark background */
-    color: #e8c37a;  /* Light gold text */
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Slideshow Styles */
@@ -14,26 +18,27 @@ body {
     max-width: 100%;
     margin: auto;
     overflow: hidden;
-    margin-bottom: 2rem;
-    border-bottom: 2px solid #e8c37a;
+}
+
+.slide {
+    display: none;
 }
 
 .slide img {
     width: 100%;
     height: auto;
-    filter: brightness(80%); /* Slight dark overlay on images */
 }
 
 .prev, .next {
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    color: #e8c37a;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 16px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: none;
+    width: auto;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    transition: 0.6s ease;
+    user-select: none;
 }
 
 .prev {
@@ -44,34 +49,24 @@ body {
     right: 0;
 }
 
-/* Section Styles */
-section {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: auto;
-    background-color: #2a2a2a; /* Darker section background */
-    margin-bottom: 2rem;
-    border-radius: 8px;
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
-h1, h2 {
-    color: #e8c37a; /* Light gold headers */
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 0.5rem;
-}
-
-/* Footer Styles */
+/* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
-    background-color: #0f0f0f;
-    color: #e8c37a;
-    border-top: 2px solid #e8c37a;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }

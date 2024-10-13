@@ -3,50 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountain View Cabin - Altitude Property Management</title>
+    <title>All Listings | Denver Rentals</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <header class="slideshow-container">
-    <div class="slide fade">
-        <img src="https://via.placeholder.com/1600x900" alt="Mountain View Cabin Exterior">
-    </div>
-    <div class="slide fade">
-        <img src="https://via.placeholder.com/1600x900" alt="Cozy Living Room">
-    </div>
-    <div class="slide fade">
-        <img src="https://via.placeholder.com/1600x900" alt="Hot Tub with Mountain Views">
-    </div>
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-</header>
+    <header>
+        <h1>Our Listings</h1>
+    </header>
+    <main>
+        <section class="listings">
+            <div class="listing-item">
+                <img src="images/mountain-cabin/exterior.jpg" alt="Mountain Cabin">
+                <h2>Mountain View Cabin</h2>
+                <p>A cozy retreat in the Rockies.</p>
+                <a href="listings/mountain-cabin.html" class="button">View Details</a>
+            </div>
 
-<section class="property-overview">
-    <h1>Mountain View Cabin</h1>
-    <p>A cozy cabin nestled in the Rockies, offering breathtaking views and nearby hiking trails.</p>
-</section>
-
-<section class="property-info">
-    <h2>Information</h2>
-    <ul>
-        <li><strong>Location:</strong> 20 minutes outside Denver, Colorado</li>
-        <li><strong>Guests:</strong> Up to 4 people</li>
-        <li><strong>Price:</strong> $250 per night</li>
-    </ul>
-</section>
-
-<section class="amenities">
-    <h2>Amenities</h2>
-    <ul>
-        <li>High-speed Wi-Fi</li>
-        <li>Fully equipped kitchen</li>
-        <li>Hot tub</li>
-        <li>Fireplace</li>
-        <li>Free parking</li>
-    </ul>
-</section>
-
-<footer>
-    <p>&copy; 2024 Altitude Property Management. All rights reserved.</p>
-</footer>
+            <div class="listing-item">
+                <img src="images/downtown-loft/main-area.jpg" alt="Downtown Loft">
+                <h2>Luxury Downtown Loft</h2>
+                <p>Modern style in the heart of Denver.</p>
+                <a href="listings/downtown-loft.html" class="button">View Details</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Denver Rentals. All rights reserved.</p>
+    </footer>
+</body>
+</html>
