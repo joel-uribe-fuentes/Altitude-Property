@@ -3,64 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Altitude Property Management</title>
+    <title>Denver Short-Term Rentals | Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Altitude Property Management</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#listings">Listings</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="slideshow-container">
+        <div class="slide fade">
+            <img src="images/mountain-cabin/exterior.jpg" alt="Mountain View Cabin">
+        </div>
+        <div class="slide fade">
+            <img src="images/downtown-loft/main-area.jpg" alt="Downtown Loft">
+        </div>
+        <div class="slide fade">
+            <img src="images/lakefront-cottage/dock.jpg" alt="Lakefront Cottage">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </header>
 
-    <section id="home" class="hero">
-        <h1>Your Next Getaway Awaits</h1>
-        <p>Discover premium short-term rentals with stunning views and exceptional service.</p>
-        <a href="#listings" class="button">Explore Listings</a>
-    </section>
+    <main>
+        <section class="intro">
+            <h1>Discover Your Perfect Stay in Denver</h1>
+            <p>Explore our handpicked short-term rentals for your next vacation or business trip.</p>
+            <a href="listings.html" class="button">See All Listings</a>
+        </section>
 
-    <section id="listings" class="listings">
-        <h2>Our Listings</h2>
-        <div class="listing-item">
-            <img src="https://via.placeholder.com/300x200" alt="Mountain View Cabin">
-            <h3>Mountain View Cabin</h3>
-            <p>Enjoy breathtaking mountain views from this cozy cabin. Perfect for a weekend getaway.</p>
-            <a href="listings.html" class="button">View Details</a>
-        </div>
+        <section class="top-listings">
+            <h2>Top 3 Listings</h2>
+            <div class="listing-item">
+                <img src="images/mountain-cabin/exterior.jpg" alt="Mountain View Cabin">
+                <h3>Mountain View Cabin</h3>
+                <p>Experience breathtaking views from this cozy retreat in the Rockies.</p>
+                <a href="listings/mountain-cabin.html" class="button">View Details</a>
+            </div>
 
-        <div class="listing-item">
-            <img src="https://via.placeholder.com/300x200" alt="Luxury Downtown Loft">
-            <h3>Luxury Downtown Loft</h3>
-            <p>Experience city living in style with this modern loft located in the heart of downtown.</p>
-            <a href="#" class="button">View Details</a>
-        </div>
+            <div class="listing-item">
+                <img src="images/downtown-loft/main-area.jpg" alt="Luxury Downtown Loft">
+                <h3>Luxury Downtown Loft</h3>
+                <p>Stay in the heart of Denver with all the modern amenities.</p>
+                <a href="listings/downtown-loft.html" class="button">View Details</a>
+            </div>
 
-        <div class="listing-item">
-            <img src="https://via.placeholder.com/300x200" alt="Lakefront Cottage">
-            <h3>Lakefront Cottage</h3>
-            <p>Relax by the lake in this charming cottage, complete with a private dock and stunning views.</p>
-            <a href="#" class="button">View Details</a>
-        </div>
-    </section>
-
-
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>At Altitude Property Management, we specialize in premium short-term rental experiences. Our properties are handpicked to offer the best locations, amenities, and service.</p>
-    </section>
+            <div class="listing-item">
+                <img src="images/lakefront-cottage/dock.jpg" alt="Lakefront Cottage">
+                <h3>Lakefront Cottage</h3>
+                <p>Relax by the water in this serene lakeside property with a private dock.</p>
+                <a href="listings/lakefront-cottage.html" class="button">View Details</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Altitude Property Management. All rights reserved.</p>
-        <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-        </ul>
+        <p>&copy; 2024 Denver Rentals. All rights reserved.</p>
     </footer>
 </body>
 </html>
